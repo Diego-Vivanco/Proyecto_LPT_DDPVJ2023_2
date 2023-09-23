@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System;
+using UnityEngine.Events;
 
 public class PlayerData : MonoBehaviour
 {
@@ -15,13 +16,15 @@ public class PlayerData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (File.Exists(fileName))
+        if (File.Exists(Application.persistentDataPath + "/" + fileName))
         {
-            sr = new StreamReader(fileName);
+            sr = new StreamReader(Application.persistentDataPath + "/" + fileName);
+            Debug.Log(Application.persistentDataPath + "/" + fileName);
             fileContent = sr.ReadToEnd();
             Debug.Log("File Content" + fileContent);
             myPlayer = new Player();
-            myPlayer = JsonUtility.FromJson<Player> (fileContent);
+            //myPlayer = JsonUtility.FromJson<Player> (fileContent);
+            players = JsonUtility.FromJson<List<Player>>(fileContent);
         }
         else
         {
