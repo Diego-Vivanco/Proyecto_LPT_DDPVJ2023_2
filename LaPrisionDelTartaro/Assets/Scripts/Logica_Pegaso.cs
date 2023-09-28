@@ -23,6 +23,8 @@ public class Logica_Pegaso : MonoBehaviour
 
         transform.Rotate(0, x*Time.deltaTime*velocidadRot, 0);
         transform.Translate(0,0, y*Time.deltaTime*velocidadMov);
-        
+
+        anim.SetFloat("velX", x);
+        anim.SetFloat("velY", y);
     }
 }
