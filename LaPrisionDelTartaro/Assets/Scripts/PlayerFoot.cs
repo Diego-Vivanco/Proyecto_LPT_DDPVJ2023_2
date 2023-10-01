@@ -25,8 +25,8 @@ public class PlayerFoot : MonoBehaviour
         playerPegaso.puedoSaltar = true;
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)  
     {
-        playerPegaso.puedoSaltar = true;
+        playerPegaso.puedoSaltar = false;
     }
 }
