@@ -10,7 +10,7 @@ public class PlayerPegaso : MonoBehaviour
     private Animator anim;
     public float x, y;
 
-    public Rigidbody rb;
+    //public Rigidbody rb;
     public float fuerzaSalto = 8.0f;
     public bool puedoSaltar;
 
@@ -37,26 +37,11 @@ public class PlayerPegaso : MonoBehaviour
         anim.SetFloat("velX", x);
         anim.SetFloat("velY", y);
 
-        if (puedoSaltar) //Si no esta saltando
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if(Input.GetKeyDown(KeyCode.Space)) //Se presiona tecla space para el salto
-            {
-                anim.SetBool("salto", true); //Se pone entrue la bandera "salto" del control de animacion
-                rb.AddForce(new Vector3(0,fuerzaSalto, 0), ForceMode.Impulse); //Aplicamos el Rigidbody
-            }
-
-            anim.SetBool("suelo", true); //Una vez que se ejecute el salto regresamos a la posición inicial en el suelo
-
-        }
-        else
-        {
-            Cayendo();
+            anim.SetTrigger("salto");
         }
     }
 
-    public void Cayendo()
-    {
-        anim.SetBool("suelo", false);
-        anim.SetBool("salto", false);
-    }
+
 }
