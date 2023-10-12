@@ -11,13 +11,13 @@ public class PlayerPegaso : MonoBehaviour
     public float x, y;
 
     //public Rigidbody rb;
-    public float fuerzaSalto = 8.0f;
+    //public float fuerzaSalto = 8.0f;
     public bool puedoSaltar;
 
     // Start is called before the first frame update
     void Start()
     {
-        puedoSaltar = false;
+        //puedoSaltar = false;
         anim = GetComponent<Animator>();
         
     }
@@ -37,10 +37,10 @@ public class PlayerPegaso : MonoBehaviour
         anim.SetFloat("velX", x);
         anim.SetFloat("velY", y);
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.SetTrigger("salto");
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    anim.SetTrigger("salto");
+        //}
     }
 
 
