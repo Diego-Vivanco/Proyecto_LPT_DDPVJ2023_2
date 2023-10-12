@@ -1020,6 +1020,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu_Inicial: {fileID: 735049614}
   menu_Creditos: {fileID: 137806040}
+  playButton: {fileID: 1185248626}
+  optionsButton: {fileID: 1742771504}
+  creditsButton: {fileID: 1745414861}
+  exitButton: {fileID: 0}
+  backFromOptionsButton: {fileID: 0}
+  backFromCreditsButton: {fileID: 85921175}
 --- !u!4 &723323039
 Transform:
   m_ObjectHideFlags: 0
@@ -1096,7 +1102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 431c6a20dc9f69f499e69636b88daa1b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4bf6a44a05b99844bb4d1b1f2140a685, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

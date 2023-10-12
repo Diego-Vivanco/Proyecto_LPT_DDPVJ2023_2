@@ -2,14 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public GameObject menu_Inicial;
     //public GameObject menu_Ajustes;
     public GameObject menu_Creditos;
     // Start is called before the first frame update
+
+    public Button playButton;
+    public Button optionsButton;
+    public Button creditsButton;
+    public Button exitButton;
+    public Button backFromOptionsButton;
+    public Button backFromCreditsButton;
+
     void Start()
     {
+        playButton.onClick.AddListener(PlayGame);
+        creditsButton.onClick.AddListener(showCredits);
+        //optionsButton.onClick.AddListener(showOptions);
+        backFromCreditsButton.onClick.AddListener(showMain);
         showMain();
     }
 
