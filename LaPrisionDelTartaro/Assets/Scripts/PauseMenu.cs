@@ -71,4 +71,8 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(nombreMenu);
     }
 
+    public void Salir()
+    {
+        Application.Quit();
+    }
 }

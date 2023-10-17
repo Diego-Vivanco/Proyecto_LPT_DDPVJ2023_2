@@ -10,6 +10,8 @@ public class PlayerPegaso : MonoBehaviour
     private Animator anim;
     public float x, y;
 
+    private AnimatorStateInfo playerAnimatorInfo;
+
     public Rigidbody rb;
     public int fuerzaSalto = 5;
     public bool puedoSaltar;
@@ -32,35 +34,37 @@ public class PlayerPegaso : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerAnimatorInfo = anim.GetCurrentAnimatorStateInfo(0);
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
         anim.SetFloat("velX", x);
         anim.SetFloat("velY", y);
 
-        if (puedoSaltar)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                anim.SetBool("salto", true);
-                rb.AddForce(new Vector3(0, fuerzaSalto, 0));
-
-            }
-            else
-            {
-                anim.SetBool("suelo", true);
-            }
-        }
-        else
-        {
-            EstoyCayendo();
-        }
-
-
-        //if (Input.GetKeyDown(KeyCode.Space))
+        //if (puedoSaltar)
         //{
-        //    anim.SetTrigger("salto");
+        //    if (Input.GetKeyDown(KeyCode.Space))
+        //    {
+        //        anim.SetBool("salto", true);
+        //        rb.AddForce(new Vector3(0, fuerzaSalto, 0));
+
+        //    }
+        //    else
+        //    {
+        //        anim.SetBool("suelo", true);
+        //    }
         //}
+        //else
+        //{
+        //    EstoyCayendo();
+        //}
+
+
+
+        if (Input.GetKeyDown(KeyCode.Space) && playerAnimatorInfo.IsName("Correr"))
+        {
+            anim.SetTrigger("saltar");
+        }
     }
 
     public void EstoyCayendo()
