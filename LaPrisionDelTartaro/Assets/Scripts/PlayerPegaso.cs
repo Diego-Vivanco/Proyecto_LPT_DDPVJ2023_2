@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerPegaso : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class PlayerPegaso : MonoBehaviour
     public int fuerzaSalto = 5;
     public bool puedoSaltar;
     public int fuerzaExtra = 3;
+
+    public Slider SFxSlider;
 
     // Start is called before the first frame update
     void Start()

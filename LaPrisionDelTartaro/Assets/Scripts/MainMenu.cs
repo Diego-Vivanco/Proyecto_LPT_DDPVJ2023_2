@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     //public GameObject menu_Ajustes;
     public GameObject menu_Creditos;
     // Start is called before the first frame update
+    public GameObject menu_Ajustes;
 
     public Button playButton;
     public Button optionsButton;
