@@ -22,8 +22,9 @@ public class MainMenu : MonoBehaviour
     {
         playButton.onClick.AddListener(PlayGame);
         creditsButton.onClick.AddListener(showCredits);
-        //optionsButton.onClick.AddListener(showOptions);
+        optionsButton.onClick.AddListener(showOptions);
         backFromCreditsButton.onClick.AddListener(showMain);
+        backFromOptionsButton.onClick.AddListener(showMain);
         showMain();
     }
 
@@ -32,11 +33,11 @@ public class MainMenu : MonoBehaviour
         CleanPanels();
         menu_Creditos.SetActive(true);
     }
-    //public void showOptions()
-    //{
-    //    CleanPanels();
-    //    menu_Ajustes.SetActive(true);
-    //}
+    public void showOptions()
+    {
+        CleanPanels();
+        menu_Ajustes.SetActive(true);
+    }
 
     public void showMain()
     {
@@ -46,7 +47,7 @@ public class MainMenu : MonoBehaviour
     private void CleanPanels()
     {
         menu_Inicial.SetActive(false);
-        //menu_Ajustes.SetActive(false);
+        menu_Ajustes.SetActive(false);
         menu_Creditos.SetActive(false);
     }
     public void PlayGame()
