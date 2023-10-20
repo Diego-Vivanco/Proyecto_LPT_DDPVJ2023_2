@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class LogicaBrillo : MonoBehaviour
 {
     public Slider slider;
-    public float sliderValue;
+    private float sliderValue = 0.5f;
     public Image panelBrillo;
 
     // Start is called before the first frame update
     void Start()
     {
-        slider.value = PlayerPrefs.GetFloat("brillo", 0.5f);
+        slider.value = PlayerPrefs.GetFloat("brillo", sliderValue);
         panelBrillo.color = new Color(panelBrillo.color.r, panelBrillo.color.g, panelBrillo.color.b, slider.value);
     }
 

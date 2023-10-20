@@ -37,12 +37,16 @@ public class MainMenu : MonoBehaviour
     {
         CleanPanels();
         menu_Ajustes.SetActive(true);
+        //SoundMusicManager.InstanceMusic.PlayMenuAjustes();
     }
 
     public void showMain()
     {
         CleanPanels();
         menu_Inicial.SetActive(true);
+        //SoundMusicManager.InstanceMusic.PlayMainMenu();
+
+
     }
     private void CleanPanels()
     {
