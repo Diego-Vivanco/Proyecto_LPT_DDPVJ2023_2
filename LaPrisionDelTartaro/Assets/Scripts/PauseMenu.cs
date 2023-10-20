@@ -15,6 +15,7 @@ public class PauseMenu : MonoBehaviour
 
     public Button botonAjustes;
     public Button regresarMenuPausa;
+    
 
     public bool pausa = false;
 
@@ -25,7 +26,7 @@ public class PauseMenu : MonoBehaviour
         MenuAjustes.SetActive(false);
         //LimpiarPaneles();
         botonAjustes.onClick.AddListener(Ajustes);
-        botonAjustes.onClick.AddListener(Reanudar);
+        regresarMenuPausa.onClick.AddListener(Reanudar);
 
 
     }
@@ -51,6 +52,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Reanudar()
     {
+        MenuAjustes.SetActive(false);
         HUD.SetActive(true);
         //ControladorOpciones.SetActive(false);
         GrupoMenuPausa.SetActive(false);
