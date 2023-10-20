@@ -10,6 +10,11 @@ public class PauseMenu : MonoBehaviour
 {
 
     public GameObject GrupoMenuPausa;
+    public GameObject MenuAjustes;
+    public GameObject HUD;
+
+    public Button botonAjustes;
+    public Button regresarMenuPausa;
 
     public bool pausa = false;
 
@@ -17,6 +22,11 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         GrupoMenuPausa.SetActive(false);
+        MenuAjustes.SetActive(false);
+        //LimpiarPaneles();
+        botonAjustes.onClick.AddListener(Ajustes);
+        botonAjustes.onClick.AddListener(Reanudar);
+
 
     }
 
@@ -27,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         {
             if (pausa == false)
             {
+                HUD.SetActive(false);
                 GrupoMenuPausa.SetActive(true);
                 pausa = true;
 
@@ -40,6 +51,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Reanudar()
     {
+        HUD.SetActive(true);
+        //ControladorOpciones.SetActive(false);
         GrupoMenuPausa.SetActive(false);
         pausa = false;
 
@@ -52,19 +65,19 @@ public class PauseMenu : MonoBehaviour
 
     public void Reinicio()
     {
+
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Ajustes()
     {
-
+        GrupoMenuPausa.SetActive(false);
+        HUD.SetActive(false);
+        MenuAjustes.SetActive(true);
     }
 
-    public void LimpiarPaneles()
-    {
-
-    }
+   
 
     public void irMenuInicio(string nombreMenu)
     {
