@@ -31,5 +31,14 @@ public class SoundSFxPegaso : MonoBehaviour
         SFxPegasoSource.PlayOneShot(SFxClip[0]);
     }
 
+    public void saltoPegaso()
+    {
+        SFxPegasoSource.PlayOneShot(SFxClip[1]);
+    }
+
+    public void impactaSueloPegaso()
+    {
+        SFxPegasoSource.PlayOneShot(SFxClip[2]);
+    }
 
 }

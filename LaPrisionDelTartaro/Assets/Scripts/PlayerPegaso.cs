@@ -14,7 +14,7 @@ public class PlayerPegaso : MonoBehaviour
     private AnimatorStateInfo playerAnimatorInfo;
 
     public Rigidbody rb;
-    public int fuerzaSalto = 5;
+    public int fuerzaSalto = 10;
     public bool puedoSaltar;
     public bool tocarSuelo;
     public int fuerzaExtra = 3;
@@ -27,28 +27,30 @@ public class PlayerPegaso : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //estoyAtacando = false;
         //puedoSaltar = false;
         tocarSuelo = false;
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        Debug.Log("Estoy atacando es: " + estoyAtacando);
         
     }
 
     private void FixedUpdate()
     {
-        //if (!estoyAtacando)
-        //{
-        //    transform.Rotate(0, x * Time.deltaTime * velocidadRot, 0);
-        //    transform.Translate(0, 0, y * Time.deltaTime * velocidadMov);
-        //}
+        if (!estoyAtacando)
+        {
+            transform.Rotate(0, x * Time.deltaTime * velocidadRot, 0);
+            transform.Translate(0, 0, y * Time.deltaTime * velocidadMov);
+        }
 
-        transform.Rotate(0, x * Time.deltaTime * velocidadRot, 0);
-        transform.Translate(0, 0, y * Time.deltaTime * velocidadMov);
+        //transform.Rotate(0, x * Time.deltaTime * velocidadRot, 0);
+        //transform.Translate(0, 0, y * Time.deltaTime * velocidadMov);
 
-        //if (avanzoSolo)
-        //{
-        //    rb.velocity = transform.forward * impulsoGolpe;
-        //}
+        if (avanzoSolo)
+        {
+            rb.velocity = transform.forward * impulsoGolpe;
+        }
     }
 
     // Update is called once per frame
@@ -57,12 +59,14 @@ public class PlayerPegaso : MonoBehaviour
         playerAnimatorInfo = anim.GetCurrentAnimatorStateInfo(0);
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
-        //SoundSFxPegaso.InstanceSFxPegaso.caminaPegaso();
-        //if (Input.GetKeyDown(KeyCode.Return) && !estoyAtacando)
-        //{
-        //    anim.SetTrigger("golpeo");
-        //    estoyAtacando = true;
-        //}
+
+
+
+        if (Input.GetKeyDown(KeyCode.Return) && tocarSuelo && !estoyAtacando)
+        {
+            anim.SetTrigger("golpeo");
+            estoyAtacando = true;
+        }
 
         anim.SetFloat("velX", x);
         anim.SetFloat("velY", y);
@@ -70,49 +74,32 @@ public class PlayerPegaso : MonoBehaviour
 
         if (tocarSuelo)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if(!estoyAtacando) //Si salto no puedo atacar
             {
-                anim.SetBool("salto", true);
-                rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
+                Debug.Log("Pegaso esta tocando el suelo");
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    anim.SetBool("salto", true);
+                    rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
+                    SoundSFxPegaso.InstanceSFxPegaso.saltoPegaso();
 
+                }
             }
+
             anim.SetBool("suelo", true);
         }
         else
         {
+            Debug.Log("Pegaso esta cayendo");
             EstoyCayendo();
         }
 
-        //if (puedoSaltar)
-        //{
-        //    if (Input.GetKeyDown(KeyCode.Space))
-        //    {
-        //        anim.SetBool("salto", true);
-        //        rb.AddForce(new Vector3(0, fuerzaSalto, 0));
 
-        //    }
-        //    else
-        //    {
-        //        anim.SetBool("suelo", true);
-        //    }
-        //}
-        //else
-        //{
-        //    EstoyCayendo();
-        //}
-
-
-
-        //if (Input.GetKeyDown(KeyCode.Space) && playerAnimatorInfo.IsName("Correr"))
-        //{
-        //    anim.SetTrigger("saltar");
-
-        //}
     }
 
     public void EstoyCayendo()
     {
-        //rb.AddForce(fuerzaExtra * Physics.gravity);
+        rb.AddForce(fuerzaExtra * Physics.gravity);
         anim.SetBool("suelo", false);
         anim.SetBool("salto", false);
     }
