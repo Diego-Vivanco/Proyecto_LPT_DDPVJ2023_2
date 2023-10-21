@@ -6,11 +6,12 @@ public class ActiveArmsPerson : MonoBehaviour
 {
     public LoadArms tomarArma;
     public int numArma;
+    private int contadorArmas;
 
     // Start is called before the first frame update
     void Start()
     {
-        tomarArma = GameObject.FindGameObjectWithTag("Pegasov1").GetComponent<LoadArms>();
+        tomarArma = GameObject.FindGameObjectWithTag("Pegaso").GetComponent<LoadArms>();
     }
 
     // Update is called once per frame
@@ -21,10 +22,12 @@ public class ActiveArmsPerson : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Pegasov1")
+        if (other.tag == "Pegaso")
         {
+            contadorArmas = contadorArmas + 1;
             tomarArma.activaArmas(numArma);
             Destroy(gameObject);
+            Debug.Log("Cantidad Armas: " + contadorArmas);
         }
     }
 

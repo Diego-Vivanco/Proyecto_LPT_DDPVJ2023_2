@@ -15,7 +15,10 @@ public class PauseMenu : MonoBehaviour
 
     public Button botonAjustes;
     public Button regresarMenuPausa;
-    
+    public Button continuar;
+    public Button salir;
+    //public Button menuInicio;
+    public Button reinicio;
 
     public bool pausa = false;
 
@@ -27,6 +30,10 @@ public class PauseMenu : MonoBehaviour
         //LimpiarPaneles();
         botonAjustes.onClick.AddListener(Ajustes);
         regresarMenuPausa.onClick.AddListener(Reanudar);
+        continuar.onClick.AddListener(Reanudar);
+        salir.onClick.AddListener(Salir);
+        reinicio.onClick.AddListener(Reinicio);
+
 
 
     }
