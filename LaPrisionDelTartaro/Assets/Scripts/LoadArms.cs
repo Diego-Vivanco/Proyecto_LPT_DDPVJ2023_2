@@ -1,10 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LoadArms : MonoBehaviour
 {
+    public GameObject interfazHUD;
+
+    public TextMeshProUGUI armasRecolectadas;
+    public TextMeshProUGUI cajasOro;
+    public TextMeshProUGUI cajasBronce;
+
+
+
+
     public GameObject[] armas;
     private int contadorArmas;
     // Start is called before the first frame update
@@ -31,6 +41,7 @@ public class LoadArms : MonoBehaviour
         armas[numero].SetActive(true);
         contadorArmas = contadorArmas + 1;
         Debug.Log("Numero de armas: " + contadorArmas);
+        SetArmas(contadorArmas);
     }
 
     public void desactivaArmas()
@@ -39,5 +50,10 @@ public class LoadArms : MonoBehaviour
         {
             armas[i].SetActive(false);
         }
+    }
+
+    public void SetArmas(int numeroArmas)
+    {
+        armasRecolectadas.text = numeroArmas.ToString();
     }
 }

@@ -32,7 +32,7 @@ public class PlayerPegaso : MonoBehaviour
         tocarSuelo = false;
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        Debug.Log("Estoy atacando es: " + estoyAtacando);
+        //Debug.Log("Estoy atacando es: " + estoyAtacando);
         
     }
 
@@ -60,16 +60,17 @@ public class PlayerPegaso : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
-
+        anim.SetFloat("velX", x);
+        anim.SetFloat("velY", y);
 
         if (Input.GetKeyDown(KeyCode.Return) && tocarSuelo && !estoyAtacando)
         {
             anim.SetTrigger("golpeo");
             estoyAtacando = true;
+            SoundSFxPegaso.InstanceSFxPegaso.golpeaPegaso();
         }
 
-        anim.SetFloat("velX", x);
-        anim.SetFloat("velY", y);
+
 
 
         if (tocarSuelo)

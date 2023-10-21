@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SoundSFxPegaso : MonoBehaviour
@@ -39,6 +40,11 @@ public class SoundSFxPegaso : MonoBehaviour
     public void impactaSueloPegaso()
     {
         SFxPegasoSource.PlayOneShot(SFxClip[2]);
+    }
+
+    public void golpeaPegaso()
+    {
+        SFxPegasoSource.PlayOneShot(SFxClip[3]);
     }
 
 }
