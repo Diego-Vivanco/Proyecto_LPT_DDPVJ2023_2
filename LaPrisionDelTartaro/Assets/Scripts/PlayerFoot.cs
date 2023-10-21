@@ -12,11 +12,11 @@ public class PlayerFoot : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
 
-        playerPegaso.puedoSaltar = true;
+        playerPegaso.tocarSuelo= true;
     }
 
     private void OnTriggerExit(Collider other)  
     {
-        playerPegaso.puedoSaltar = false;
+        playerPegaso.tocarSuelo = false;
     }
 }

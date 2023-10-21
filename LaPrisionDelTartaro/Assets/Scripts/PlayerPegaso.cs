@@ -16,6 +16,7 @@ public class PlayerPegaso : MonoBehaviour
     public Rigidbody rb;
     public int fuerzaSalto = 5;
     public bool puedoSaltar;
+    public bool tocarSuelo;
     public int fuerzaExtra = 3;
 
     //public Slider SFxSlider;
@@ -27,6 +28,8 @@ public class PlayerPegaso : MonoBehaviour
     void Start()
     {
         //puedoSaltar = false;
+        tocarSuelo = false;
+        rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         
     }
@@ -64,6 +67,22 @@ public class PlayerPegaso : MonoBehaviour
         anim.SetFloat("velX", x);
         anim.SetFloat("velY", y);
 
+
+        if (tocarSuelo)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                anim.SetBool("salto", true);
+                rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
+
+            }
+            anim.SetBool("suelo", true);
+        }
+        else
+        {
+            EstoyCayendo();
+        }
+
         //if (puedoSaltar)
         //{
         //    if (Input.GetKeyDown(KeyCode.Space))
@@ -84,16 +103,16 @@ public class PlayerPegaso : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && playerAnimatorInfo.IsName("Correr"))
-        {
-            anim.SetTrigger("saltar");
+        //if (Input.GetKeyDown(KeyCode.Space) && playerAnimatorInfo.IsName("Correr"))
+        //{
+        //    anim.SetTrigger("saltar");
 
-        }
+        //}
     }
 
     public void EstoyCayendo()
     {
-        rb.AddForce(fuerzaExtra * Physics.gravity);
+        //rb.AddForce(fuerzaExtra * Physics.gravity);
         anim.SetBool("suelo", false);
         anim.SetBool("salto", false);
     }
