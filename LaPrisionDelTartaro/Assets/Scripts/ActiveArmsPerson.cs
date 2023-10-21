@@ -6,7 +6,7 @@ public class ActiveArmsPerson : MonoBehaviour
 {
     public LoadArms tomarArma;
     public int numArma;
-    private int contadorArmas;
+    //private int contadorArmas;
 
     // Start is called before the first frame update
     void Start()
@@ -24,10 +24,10 @@ public class ActiveArmsPerson : MonoBehaviour
     {
         if (other.tag == "Pegaso")
         {
-            contadorArmas = contadorArmas + 1;
+            //contadorArmas = contadorArmas + 1;
             tomarArma.activaArmas(numArma);
             Destroy(gameObject);
-            Debug.Log("Cantidad Armas: " + contadorArmas);
+            //Debug.Log("Cantidad Armas: " + contadorArmas);
         }
     }
 

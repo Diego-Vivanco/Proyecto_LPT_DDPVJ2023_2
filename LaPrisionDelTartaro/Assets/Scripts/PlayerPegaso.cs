@@ -18,7 +18,10 @@ public class PlayerPegaso : MonoBehaviour
     public bool puedoSaltar;
     public int fuerzaExtra = 3;
 
-    public Slider SFxSlider;
+    //public Slider SFxSlider;
+    public bool estoyAtacando;
+    public bool avanzoSolo;
+    public float impulsoGolpe = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +33,19 @@ public class PlayerPegaso : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //if (!estoyAtacando)
+        //{
+        //    transform.Rotate(0, x * Time.deltaTime * velocidadRot, 0);
+        //    transform.Translate(0, 0, y * Time.deltaTime * velocidadMov);
+        //}
+
         transform.Rotate(0, x * Time.deltaTime * velocidadRot, 0);
         transform.Translate(0, 0, y * Time.deltaTime * velocidadMov);
+
+        //if (avanzoSolo)
+        //{
+        //    rb.velocity = transform.forward * impulsoGolpe;
+        //}
     }
 
     // Update is called once per frame
@@ -40,6 +54,12 @@ public class PlayerPegaso : MonoBehaviour
         playerAnimatorInfo = anim.GetCurrentAnimatorStateInfo(0);
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
+
+        //if (Input.GetKeyDown(KeyCode.Return) && !estoyAtacando)
+        //{
+        //    anim.SetTrigger("golpeo");
+        //    estoyAtacando = true;
+        //}
 
         anim.SetFloat("velX", x);
         anim.SetFloat("velY", y);
@@ -75,5 +95,21 @@ public class PlayerPegaso : MonoBehaviour
         rb.AddForce(fuerzaExtra * Physics.gravity);
         anim.SetBool("suelo", false);
         anim.SetBool("salto", false);
+    }
+
+    public void DejarGolpear()
+    {
+        estoyAtacando = false;
+        //avanzoSolo = false;
+    }
+
+    public void AvanzandoSolo()
+    {
+        avanzoSolo = true;
+    }
+
+    public void DejoAvanzar()
+    {
+        avanzoSolo = false;
     }
 }

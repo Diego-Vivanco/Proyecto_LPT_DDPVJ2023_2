@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class LoadArms : MonoBehaviour
 {
     public GameObject[] armas;
+    private int contadorArmas;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,8 @@ public class LoadArms : MonoBehaviour
             armas[i].SetActive(false);
         }
         armas[numero].SetActive(true);
+        contadorArmas = contadorArmas + 1;
+        Debug.Log("Numero de armas: " + contadorArmas);
     }
 
     public void desactivaArmas()

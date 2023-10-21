@@ -20,6 +20,7 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
+        menu_Ajustes.SetActive(false);
         playButton.onClick.AddListener(PlayGame);
         creditsButton.onClick.AddListener(showCredits);
         optionsButton.onClick.AddListener(showOptions);
