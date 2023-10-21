@@ -8,7 +8,7 @@ public class SoundSFxPegaso : MonoBehaviour
 
     public AudioClip[] SFxClip;
 
-    public static SoundMusicManager InstanceSFxPegaso;
+    public static SoundSFxPegaso InstanceSFxPegaso;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,4 +20,16 @@ public class SoundSFxPegaso : MonoBehaviour
     {
         
     }
+
+    private void Awake()
+    {
+        InstanceSFxPegaso = this;
+    }
+
+    public void caminaPegaso()
+    {
+        SFxPegasoSource.PlayOneShot(SFxClip[0]);
+    }
+
+
 }

@@ -54,7 +54,7 @@ public class PlayerPegaso : MonoBehaviour
         playerAnimatorInfo = anim.GetCurrentAnimatorStateInfo(0);
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
-
+        //SoundSFxPegaso.InstanceSFxPegaso.caminaPegaso();
         //if (Input.GetKeyDown(KeyCode.Return) && !estoyAtacando)
         //{
         //    anim.SetTrigger("golpeo");
@@ -87,6 +87,7 @@ public class PlayerPegaso : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && playerAnimatorInfo.IsName("Correr"))
         {
             anim.SetTrigger("saltar");
+
         }
     }
 
