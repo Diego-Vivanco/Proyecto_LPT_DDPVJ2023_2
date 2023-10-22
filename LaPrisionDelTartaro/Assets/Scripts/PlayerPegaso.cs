@@ -77,7 +77,7 @@ public class PlayerPegaso : MonoBehaviour
         {
             if(!estoyAtacando) //Si salto no puedo atacar
             {
-                Debug.Log("Pegaso esta tocando el suelo");
+                //Debug.Log("Pegaso esta tocando el suelo");
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     anim.SetBool("salto", true);

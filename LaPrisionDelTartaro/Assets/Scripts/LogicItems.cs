@@ -13,7 +13,7 @@ public class LogicItems : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerPegaso = GameObject.FindGameObjectWithTag("Pegasov1").GetComponent<PlayerPegaso>();
+        playerPegaso = GameObject.FindGameObjectWithTag("Pegaso").GetComponent<PlayerPegaso>();
     }
 
     // Update is called once per frame
@@ -28,10 +28,13 @@ public class LogicItems : MonoBehaviour
         switch (tipo)
         {
             case 1:
-                Debug.Log("Cajas de oro: " );
+                Debug.Log("Sin Efecto: " );
                 break;
             case 2:
                 Debug.Log("Cajas de bronce: ");
+                break;
+            case 3:
+                Debug.Log("Cajas de Oro");
                 break;
             default:
                 Debug.Log("Sin efecto");

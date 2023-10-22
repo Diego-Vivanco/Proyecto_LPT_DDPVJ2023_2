@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LogicBox : MonoBehaviour
 {
+    private int contadorOro;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,8 @@ public class LogicBox : MonoBehaviour
     {
         if(other.tag =="objeto" && other.GetComponent<LogicItems>().destruirAutomatico == true)
         {
+            contadorOro += 1;
+            Debug.Log("Cajas de Oro: " + contadorOro);
             other.GetComponent<LogicItems>().Efecto();
             Destroy(other.gameObject);
         }
