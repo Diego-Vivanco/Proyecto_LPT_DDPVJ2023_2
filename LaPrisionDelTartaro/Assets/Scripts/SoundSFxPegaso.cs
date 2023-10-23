@@ -46,5 +46,9 @@ public class SoundSFxPegaso : MonoBehaviour
     {
         SFxPegasoSource.PlayOneShot(SFxClip[3]);
     }
+    public void pateaPegaso()
+    {
+        SFxPegasoSource.PlayOneShot(SFxClip[4]);
+    }
 
 }

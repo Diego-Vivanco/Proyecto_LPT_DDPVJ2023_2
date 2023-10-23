@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: b365ad84382cc4242bb8a4a4ab49b557
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tFound
+      duplicate transform 'PieDer' for human bone 'RightFoot' and 'LeftFoot'\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Balrog_Base(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HombreraIzq
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HombreraDer
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Torso
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: alaIzq
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: alaDer
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BrazoIzq
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BrazoDer
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Piernas
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BotaIzq
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BotaDer
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HombroDer
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rostro
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cabello
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HombroIzq
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: huesoAlaIzq
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HuesoAlaDer
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Col1
+      parentName: Balrog_Base(Clone)
+      position: {x: -0.007529791, y: 1.0860251, z: 0.000000047471666}
+      rotation: {x: -0.0000008111482, y: 0.0000008435228, z: -0.6936466, w: 0.72031546}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Col2
+      parentName: Col1
+      position: {x: -0.11341023, y: -0.000000287652, z: 8.7521074e-10}
+      rotation: {x: 0.0000011631597, y: -0.00000006715976, z: -0.057643067, w: 0.99833727}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Col3
+      parentName: Col2
+      position: {x: -0.096497305, y: 0.0000005692482, z: 0.000000015445115}
+      rotation: {x: 0.0000000086585885, y: 3.362884e-10, z: 0.038807813, w: 0.9992467}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Col4
+      parentName: Col3
+      position: {x: -0.10263462, y: 0.00000003141463, z: 0.000000022864263}
+      rotation: {x: 0.011737384, y: 0.42284712, z: -0.009352702, w: 0.9060767}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HombroIzq
+      parentName: Col4
+      position: {x: -0.07708987, y: -0.00000046024323, z: -1.8480932e-13}
+      rotation: {x: 0.09849801, y: -0.101432234, z: 0.67085195, w: 0.72798854}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BrazoIzq
+      parentName: HombroIzq
+      position: {x: -0.16362482, y: 0, z: -0.0000000017032027}
+      rotation: {x: 0.0072236704, y: 0.12501253, z: 0.0013392037, w: 0.99212795}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AnteBrazoIzq
+      parentName: BrazoIzq
+      position: {x: -0.2523563, y: 0, z: 0.000000005298853}
+      rotation: {x: -0.029179621, y: 0.063332215, z: 0.009809226, w: 0.99751765}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManoIzq
+      parentName: AnteBrazoIzq
+      position: {x: -0.27956676, y: -0.00000009689331, z: 0}
+      rotation: {x: -4.7115384e-10, y: -0.000000006125873, z: -2.8862286e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HombroDer
+      parentName: Col4
+      position: {x: -0.077092096, y: 0, z: -1.8480932e-13}
+      rotation: {x: -0.13296473, y: -0.10074714, z: -0.67129934, w: 0.72216874}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BrazoDer
+      parentName: HombroDer
+      position: {x: -0.15677357, y: -0.00000009689331, z: 0.000000010976195}
+      rotation: {x: 0.010880184, y: 0.11207233, z: -0.06646871, w: 0.9914148}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AnteBrazoDer
+      parentName: BrazoDer
+      position: {x: -0.22459795, y: 0, z: 0.000000010597706}
+      rotation: {x: 0.14282145, y: 0.062140137, z: -0.003619439, w: 0.9877893}
+      scale: {x: 1.226802, y: 1.017039, z: 1.090415}
+    - name: ManoDer
+      parentName: AnteBrazoDer
+      position: {x: -0.2541171, y: -0.00000038757324, z: 0.000000072669984}
+      rotation: {x: 0.000000009778886, y: -9.677015e-10, z: 0.00000008568168, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cuello
+      parentName: Col4
+      position: {x: -0.0770824, y: 0.0000005571365, z: 0.00000001714751}
+      rotation: {x: 0.0000000011107297, y: 5.546674e-12, z: 0.004993658, w: 0.99998754}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cabeza
+      parentName: Cuello
+      position: {x: -0.13071702, y: -0.0000007630348, z: 0.000000029071384}
+      rotation: {x: -4.440892e-16, y: -3.8050308e-23, z: 0.00000008568168, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ColAlaas
+      parentName: Col4
+      position: {x: -0.07707756, y: -0.00000014533997, z: -2.77214e-13}
+      rotation: {x: 0.4028116, y: -0.5568672, z: 0.5688011, w: 0.45178208}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlaIzq1
+      parentName: ColAlaas
+      position: {x: -0.15277992, y: 0, z: 0.000000024980306}
+      rotation: {x: -0.4804811, y: 0.64447844, z: 0.109259605, w: 0.58467764}
+      scale: {x: 0.999999, y: 0.999999, z: 1}
+    - name: AlaIzq2
+      parentName: AlaIzq1
+      position: {x: -0.18244952, y: -0.00000009689331, z: 0}
+      rotation: {x: -0.08729753, y: 0.04507499, z: 0.029029183, w: 0.9947385}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlaIzq3
+      parentName: AlaIzq2
+      position: {x: -0.13598762, y: 0, z: 0}
+      rotation: {x: 0.000000007450577, y: 0.000000029802322, z: 0.00000009313226,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlaDer1
+      parentName: ColAlaas
+      position: {x: -0.15277992, y: 0, z: 0.000000026494265}
+      rotation: {x: -0.47962674, y: 0.2387847, z: -0.65125126, w: 0.5374122}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlaDer2
+      parentName: AlaDer1
+      position: {x: -0.11762247, y: -0.00000014533997, z: 0}
+      rotation: {x: 0.08732568, y: 0.11586249, z: -0.20156167, w: 0.9686708}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlaDer3
+      parentName: AlaDer2
+      position: {x: -0.14483196, y: 0.000000048446655, z: -0.00000009689331}
+      rotation: {x: 0.000000014901157, y: -0.000000029802319, z: -0.000000029802319,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Der
+      parentName: Col1
+      position: {x: -0.11341023, y: -0.0000004360199, z: -0.0000000040785744}
+      rotation: {x: -0.0000002438928, y: -0.0000010379715, z: 0.9730096, w: -0.23076464}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PiernaDer
+      parentName: Der
+      position: {x: -0.21604592, y: 0.00000009689331, z: 0.00000003402759}
+      rotation: {x: -0.00036285192, y: -0.0209855, z: -0.1052455, w: 0.9942248}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AntePiernaDer
+      parentName: PiernaDer
+      position: {x: -0.39667255, y: -0.00000009689331, z: 0.000000048446655}
+      rotation: {x: -0.03259649, y: -0.09950472, z: -0.050072324, w: 0.9932417}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PieDer
+      parentName: AntePiernaDer
+      position: {x: -0.58040255, y: 0.000000072669984, z: 0.000000048446655}
+      rotation: {x: 0.072803475, y: 0.64785427, z: 0.04007603, w: 0.7572176}
+      scale: {x: 1.437009, y: 1.039989, z: 1.050247}
+    - name: Izq
+      parentName: Col1
+      position: {x: -0.11341023, y: -0.00000058135987, z: 0.0000000040780543}
+      rotation: {x: 0.00000026555176, y: -0.0000010356464, z: 0.9763197, w: 0.21633293}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PiernaIzq
+      parentName: Izq
+      position: {x: -0.20532274, y: 0, z: -3.984951e-12}
+      rotation: {x: -0.0024332288, y: -0.031949714, z: 0.05631237, w: 0.99789894}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AntePiernaIzq
+      parentName: PiernaIzq
+      position: {x: -0.41217056, y: -0.00000009689331, z: 0.000000006055832}
+      rotation: {x: 0.02067162, y: -0.059785884, z: 0.05719076, w: 0.99635714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PieDer
+      parentName: AntePiernaIzq
+      position: {x: -0.5909261, y: 0.00000019378662, z: 0.000000036334992}
+      rotation: {x: 0.08272393, y: 0.69332415, z: -0.22074386, w: 0.6809776}
+      scale: {x: 1.452109, y: 1.044143, z: 1.010051}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
