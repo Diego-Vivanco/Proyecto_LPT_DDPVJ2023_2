@@ -16,8 +16,7 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tFound
-      duplicate transform 'PieDer' for human bone 'RightFoot' and 'LeftFoot'\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -89,17 +88,7 @@ ModelImporter:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: HombreraIzq
-      parentName: Balrog_Base(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: HombreraDer
-      parentName: Balrog_Base(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Torso
+    - name: alaDer
       parentName: Balrog_Base(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
@@ -109,22 +98,7 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-    - name: alaDer
-      parentName: Balrog_Base(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: BrazoIzq
-      parentName: Balrog_Base(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: BrazoDer
-      parentName: Balrog_Base(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Piernas
+    - name: BotaDer
       parentName: Balrog_Base(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
@@ -134,17 +108,12 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-    - name: BotaDer
+    - name: BrazoDer
       parentName: Balrog_Base(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-    - name: HombroDer
-      parentName: Balrog_Base(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: rostro
+    - name: BrazoIzq
       parentName: Balrog_Base(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
@@ -154,12 +123,22 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-    - name: HombroIzq
+    - name: HombreraDer
       parentName: Balrog_Base(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-    - name: huesoAlaIzq
+    - name: HombreraIzq
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HombroDer
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HombroIzq
       parentName: Balrog_Base(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
@@ -169,11 +148,71 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
+    - name: huesoAlaIzq
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Piernas
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rostro
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Torso
+      parentName: Balrog_Base(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
     - name: Col1
       parentName: Balrog_Base(Clone)
       position: {x: -0.007529791, y: 1.0860251, z: 0.000000047471666}
       rotation: {x: -0.0000008111482, y: 0.0000008435228, z: -0.6936466, w: 0.72031546}
       scale: {x: 1, y: 1, z: 1}
+    - name: Der
+      parentName: Col1
+      position: {x: -0.11341023, y: -0.0000004360199, z: -0.0000000040785744}
+      rotation: {x: -0.0000002438928, y: -0.0000010379715, z: 0.9730096, w: -0.23076464}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PiernaDer
+      parentName: Der
+      position: {x: -0.21604592, y: 0.00000009689331, z: 0.00000003402759}
+      rotation: {x: -0.0018126915, y: -0.027024928, z: -0.06689986, w: 0.997392}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AntePiernaDer
+      parentName: PiernaDer
+      position: {x: -0.39667255, y: -0.00000009689331, z: 0.000000048446655}
+      rotation: {x: -0.03259649, y: -0.09950472, z: -0.050072324, w: 0.9932417}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PieDer
+      parentName: AntePiernaDer
+      position: {x: -0.58040255, y: 0.000000072669984, z: 0.000000048446655}
+      rotation: {x: 0.090881236, y: 0.6511738, z: 0.005915554, w: 0.7534443}
+      scale: {x: 1.437009, y: 1.039989, z: 1.050247}
+    - name: Izq
+      parentName: Col1
+      position: {x: -0.11341023, y: -0.00000058135987, z: 0.0000000040780543}
+      rotation: {x: 0.00000026555176, y: -0.0000010356464, z: 0.9763197, w: 0.21633293}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PiernaIzq
+      parentName: Izq
+      position: {x: -0.20532274, y: 0, z: -3.984951e-12}
+      rotation: {x: 0.00010173865, y: -0.046213757, z: 0.0021991224, w: 0.9989292}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AntePiernaIzq
+      parentName: PiernaIzq
+      position: {x: -0.41217056, y: -0.00000009689331, z: 0.000000006055832}
+      rotation: {x: 0.02067162, y: -0.059785884, z: 0.05719076, w: 0.99635714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PieDer
+      parentName: AntePiernaIzq
+      position: {x: -0.5909261, y: 0.00000019378662, z: 0.000000036334992}
+      rotation: {x: 0.04784479, y: 0.7093017, z: -0.1799255, w: 0.67987406}
+      scale: {x: 1.452109, y: 1.044143, z: 1.010051}
     - name: Col2
       parentName: Col1
       position: {x: -0.11341023, y: -0.000000287652, z: 8.7521074e-10}
@@ -187,7 +226,27 @@ ModelImporter:
     - name: Col4
       parentName: Col3
       position: {x: -0.10263462, y: 0.00000003141463, z: 0.000000022864263}
-      rotation: {x: 0.011737384, y: 0.42284712, z: -0.009352702, w: 0.9060767}
+      rotation: {x: 0.000000006176176, y: 1.7139987e-10, z: 0.027744547, w: 0.9996151}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HombroDer
+      parentName: Col4
+      position: {x: -0.077092096, y: 0, z: -1.8480932e-13}
+      rotation: {x: -0.1677233, y: -0.13342665, z: -0.6495517, w: 0.72948533}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BrazoDer
+      parentName: HombroDer
+      position: {x: -0.15677357, y: -0.00000009689331, z: 0.000000010976195}
+      rotation: {x: 0.006767534, y: 0.057818845, z: -0.07109586, w: 0.9957694}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AnteBrazoDer
+      parentName: BrazoDer
+      position: {x: -0.22459795, y: 0, z: 0.000000010597706}
+      rotation: {x: 0.1295384, y: 0.42968798, z: -0.019291857, w: 0.8934293}
+      scale: {x: 1.226802, y: 1.017039, z: 1.090415}
+    - name: ManoDer
+      parentName: AnteBrazoDer
+      position: {x: -0.2541171, y: -0.00000038757324, z: 0.000000072669984}
+      rotation: {x: 0.000000009778886, y: -9.677015e-10, z: 0.00000008568168, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: HombroIzq
       parentName: Col4
@@ -197,52 +256,38 @@ ModelImporter:
     - name: BrazoIzq
       parentName: HombroIzq
       position: {x: -0.16362482, y: 0, z: -0.0000000017032027}
-      rotation: {x: 0.0072236704, y: 0.12501253, z: 0.0013392037, w: 0.99212795}
+      rotation: {x: 0.0017334386, y: -0.024585323, z: -0.04421564, w: 0.99871796}
       scale: {x: 1, y: 1, z: 1}
     - name: AnteBrazoIzq
       parentName: BrazoIzq
       position: {x: -0.2523563, y: 0, z: 0.000000005298853}
-      rotation: {x: -0.029179621, y: 0.063332215, z: 0.009809226, w: 0.99751765}
+      rotation: {x: -0.030589212, y: 0.27455413, z: 0.0035347668, w: 0.9610785}
       scale: {x: 1, y: 1, z: 1}
     - name: ManoIzq
       parentName: AnteBrazoIzq
       position: {x: -0.27956676, y: -0.00000009689331, z: 0}
       rotation: {x: -4.7115384e-10, y: -0.000000006125873, z: -2.8862286e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: HombroDer
-      parentName: Col4
-      position: {x: -0.077092096, y: 0, z: -1.8480932e-13}
-      rotation: {x: -0.13296473, y: -0.10074714, z: -0.67129934, w: 0.72216874}
-      scale: {x: 1, y: 1, z: 1}
-    - name: BrazoDer
-      parentName: HombroDer
-      position: {x: -0.15677357, y: -0.00000009689331, z: 0.000000010976195}
-      rotation: {x: 0.010880184, y: 0.11207233, z: -0.06646871, w: 0.9914148}
-      scale: {x: 1, y: 1, z: 1}
-    - name: AnteBrazoDer
-      parentName: BrazoDer
-      position: {x: -0.22459795, y: 0, z: 0.000000010597706}
-      rotation: {x: 0.14282145, y: 0.062140137, z: -0.003619439, w: 0.9877893}
-      scale: {x: 1.226802, y: 1.017039, z: 1.090415}
-    - name: ManoDer
-      parentName: AnteBrazoDer
-      position: {x: -0.2541171, y: -0.00000038757324, z: 0.000000072669984}
-      rotation: {x: 0.000000009778886, y: -9.677015e-10, z: 0.00000008568168, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Cuello
-      parentName: Col4
-      position: {x: -0.0770824, y: 0.0000005571365, z: 0.00000001714751}
-      rotation: {x: 0.0000000011107297, y: 5.546674e-12, z: 0.004993658, w: 0.99998754}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Cabeza
-      parentName: Cuello
-      position: {x: -0.13071702, y: -0.0000007630348, z: 0.000000029071384}
-      rotation: {x: -4.440892e-16, y: -3.8050308e-23, z: 0.00000008568168, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: ColAlaas
       parentName: Col4
       position: {x: -0.07707756, y: -0.00000014533997, z: -2.77214e-13}
       rotation: {x: 0.4028116, y: -0.5568672, z: 0.5688011, w: 0.45178208}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlaDer1
+      parentName: ColAlaas
+      position: {x: -0.15277992, y: 0, z: 0.000000026494265}
+      rotation: {x: -0.6189123, y: 0.08720256, z: -0.5788689, w: 0.5236927}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlaDer2
+      parentName: AlaDer1
+      position: {x: -0.11762247, y: -0.00000014533997, z: 0}
+      rotation: {x: 0.08732568, y: 0.11586249, z: -0.20156167, w: 0.9686708}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlaDer3
+      parentName: AlaDer2
+      position: {x: -0.14483196, y: 0.000000048446655, z: -0.00000009689331}
+      rotation: {x: 0.000000014901157, y: -0.000000029802319, z: -0.000000029802319,
+        w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: AlaIzq1
       parentName: ColAlaas
@@ -260,62 +305,16 @@ ModelImporter:
       rotation: {x: 0.000000007450577, y: 0.000000029802322, z: 0.00000009313226,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: AlaDer1
-      parentName: ColAlaas
-      position: {x: -0.15277992, y: 0, z: 0.000000026494265}
-      rotation: {x: -0.47962674, y: 0.2387847, z: -0.65125126, w: 0.5374122}
+    - name: Cuello
+      parentName: Col4
+      position: {x: -0.0770824, y: 0.0000005571365, z: 0.00000001714751}
+      rotation: {x: 0.0000000011107297, y: 5.546674e-12, z: 0.004993658, w: 0.99998754}
       scale: {x: 1, y: 1, z: 1}
-    - name: AlaDer2
-      parentName: AlaDer1
-      position: {x: -0.11762247, y: -0.00000014533997, z: 0}
-      rotation: {x: 0.08732568, y: 0.11586249, z: -0.20156167, w: 0.9686708}
+    - name: Cabeza
+      parentName: Cuello
+      position: {x: -0.13071702, y: -0.0000007630348, z: 0.000000029071384}
+      rotation: {x: -4.440892e-16, y: -3.8050308e-23, z: 0.00000008568168, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: AlaDer3
-      parentName: AlaDer2
-      position: {x: -0.14483196, y: 0.000000048446655, z: -0.00000009689331}
-      rotation: {x: 0.000000014901157, y: -0.000000029802319, z: -0.000000029802319,
-        w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Der
-      parentName: Col1
-      position: {x: -0.11341023, y: -0.0000004360199, z: -0.0000000040785744}
-      rotation: {x: -0.0000002438928, y: -0.0000010379715, z: 0.9730096, w: -0.23076464}
-      scale: {x: 1, y: 1, z: 1}
-    - name: PiernaDer
-      parentName: Der
-      position: {x: -0.21604592, y: 0.00000009689331, z: 0.00000003402759}
-      rotation: {x: -0.00036285192, y: -0.0209855, z: -0.1052455, w: 0.9942248}
-      scale: {x: 1, y: 1, z: 1}
-    - name: AntePiernaDer
-      parentName: PiernaDer
-      position: {x: -0.39667255, y: -0.00000009689331, z: 0.000000048446655}
-      rotation: {x: -0.03259649, y: -0.09950472, z: -0.050072324, w: 0.9932417}
-      scale: {x: 1, y: 1, z: 1}
-    - name: PieDer
-      parentName: AntePiernaDer
-      position: {x: -0.58040255, y: 0.000000072669984, z: 0.000000048446655}
-      rotation: {x: 0.072803475, y: 0.64785427, z: 0.04007603, w: 0.7572176}
-      scale: {x: 1.437009, y: 1.039989, z: 1.050247}
-    - name: Izq
-      parentName: Col1
-      position: {x: -0.11341023, y: -0.00000058135987, z: 0.0000000040780543}
-      rotation: {x: 0.00000026555176, y: -0.0000010356464, z: 0.9763197, w: 0.21633293}
-      scale: {x: 1, y: 1, z: 1}
-    - name: PiernaIzq
-      parentName: Izq
-      position: {x: -0.20532274, y: 0, z: -3.984951e-12}
-      rotation: {x: -0.0024332288, y: -0.031949714, z: 0.05631237, w: 0.99789894}
-      scale: {x: 1, y: 1, z: 1}
-    - name: AntePiernaIzq
-      parentName: PiernaIzq
-      position: {x: -0.41217056, y: -0.00000009689331, z: 0.000000006055832}
-      rotation: {x: 0.02067162, y: -0.059785884, z: 0.05719076, w: 0.99635714}
-      scale: {x: 1, y: 1, z: 1}
-    - name: PieDer
-      parentName: AntePiernaIzq
-      position: {x: -0.5909261, y: 0.00000019378662, z: 0.000000036334992}
-      rotation: {x: 0.08272393, y: 0.69332415, z: -0.22074386, w: 0.6809776}
-      scale: {x: 1.452109, y: 1.044143, z: 1.010051}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -330,7 +329,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
