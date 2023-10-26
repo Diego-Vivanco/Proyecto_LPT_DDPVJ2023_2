@@ -6,6 +6,10 @@ TagManager:
   tags:
   - objeto
   - Pegaso
+  - oro
+  - bronce
+  - Portal
+  - Arma3
   layers:
   - Default
   - TransparentFX
