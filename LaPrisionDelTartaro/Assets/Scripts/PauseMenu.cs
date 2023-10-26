@@ -12,12 +12,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject GrupoMenuPausa;
     public GameObject MenuAjustes;
     public GameObject HUD;
+    public GameObject GameOver;
+    //public GameObject Credits;
 
     public Button botonAjustes;
     public Button regresarMenuPausa;
     public Button continuar;
     public Button salir;
-    //public Button menuInicio;
+    public Button menuInicio;
     public Button reinicio;
 
     public bool pausa = false;
@@ -27,6 +29,7 @@ public class PauseMenu : MonoBehaviour
     {
         GrupoMenuPausa.SetActive(false);
         MenuAjustes.SetActive(false);
+        GameOver.SetActive(false);
         //LimpiarPaneles();
         botonAjustes.onClick.AddListener(Ajustes);
         regresarMenuPausa.onClick.AddListener(Reanudar);
