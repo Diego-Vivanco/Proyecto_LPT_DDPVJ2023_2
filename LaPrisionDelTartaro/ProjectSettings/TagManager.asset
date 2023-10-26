@@ -10,6 +10,7 @@ TagManager:
   - bronce
   - Portal
   - Arma3
+  - vacio
   layers:
   - Default
   - TransparentFX

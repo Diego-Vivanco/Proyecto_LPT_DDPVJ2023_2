@@ -12,9 +12,13 @@ public class Caida : MonoBehaviour
         if(other.tag == "vacio" && lifes == 0)
         {
             Debug.Log("JUEGO PERDIDO");
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //lifes -= 1;
         }
-        else
+        if(other.tag == "vacio" && lifes  > 0)
         {
+            lifes-=1; ;
+            Debug.Log("lifes: " + lifes);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
