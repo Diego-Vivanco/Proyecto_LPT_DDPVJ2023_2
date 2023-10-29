@@ -16,6 +16,7 @@ public class PlayerData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Debug.Log(Application.persistentDataPath);
         if (File.Exists(Application.persistentDataPath + "/" + fileName))
         {
             sr = new StreamReader(Application.persistentDataPath + "/" + fileName);

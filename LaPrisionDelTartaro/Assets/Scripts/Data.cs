@@ -14,41 +14,39 @@ public class Data : MonoBehaviour
     private StreamReader sr;
     private string fileContent;
     private Datos datos;
+    private string ruta;
     //private List<Player> players;
 
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(Application.persistentDataPath);
+        ruta = Application.persistentDataPath + "/" +  fileName;
         if (File.Exists(Application.persistentDataPath + "/" + fileName))
         {
             Debug.Log("El archivo ya existe");
-            sr = new StreamReader(Application.persistentDataPath + "/" + fileName);
+            sr = new StreamReader(/*Application.persistentDataPath + "/" +*/ fileName);
             Debug.Log(Application.persistentDataPath + "/" + fileName);
             fileContent = sr.ReadToEnd();
-            Debug.Log("File Content" + fileContent);
+            //Debug.Log("File Content" + fileContent);
             datos = new Datos();
             datos = JsonUtility.FromJson<Datos> (fileContent);
-            //players = JsonUtility.FromJson<List<Player>>(fileContent);
+            Debug.Log(datos.numArmas);
         }
         else
         {
             Debug.Log("No existe el archivo");
-
             datos = new Datos();
             datos.vidas = 3;
             datos.numArmas = 0;
             datos.numPlata = 0;
             datos.numOro = 0;
             datos.porcentajeVida = 100;
-            sw = new StreamWriter(fileName, false);
-            fileContent = JsonUtility.ToJson(datos); //Mandar un objeto cuya clase sea Serializable
-            sw.Write(fileContent);
-            sw.Close();
+
+
 
             Debug.Log("Se creo el archivo");
 
-
- 
         }
     }
 
@@ -58,16 +56,29 @@ public class Data : MonoBehaviour
         
     }
 
-    [Serializable]
-    public class Datos
+    public void EditaNumArmas(int numeroArmas)
     {
-        public int vidas;
-        public int numArmas;
-        public int numOro;
-        public int numPlata;
-        public int porcentajeVida;
+        datos.numArmas = numeroArmas;
+        escribirDatos();
+    }
+
+    public void EditaNumOro(int numeroOro)
+    {
+        datos.numOro = numeroOro;
+        escribirDatos();
+    }
+
+    public void escribirDatos()
+    {
+        sw = new StreamWriter(fileName, false);
+        fileContent = JsonUtility.ToJson(datos); //Mandar un objeto cuya clase sea Serializable
+        sw.Write(fileContent);
+        sw.Close();
+    }
+
+    
 
     }
 
 
-}
+

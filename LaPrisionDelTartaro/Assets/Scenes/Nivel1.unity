@@ -1359,7 +1359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00005835476, y: 0.99993145, z: -0.0057049682, w: -0.01022806}
+  m_LocalRotation: {x: -0.00005835474, y: 0.99993145, z: -0.0057049682, w: -0.010228056}
   m_LocalPosition: {x: 13.651078, y: 2.35571, z: 0.6728041}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -18604,17 +18604,17 @@ PrefabInstance:
     - target: {fileID: 6120479993862820585, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.023892274
+      value: 0.023892254
       objectReference: {fileID: 0}
     - target: {fileID: 6120479993862820585, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.010225322
+      value: 0.010225288
       objectReference: {fileID: 0}
     - target: {fileID: 6120479993862820585, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00024438876
+      value: -0.00024438772
       objectReference: {fileID: 0}
     - target: {fileID: 6515700781438426803, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
@@ -18624,12 +18624,12 @@ PrefabInstance:
     - target: {fileID: 6959467110423113080, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.010228061
+      value: 0.010228059
       objectReference: {fileID: 0}
     - target: {fileID: 6959467110423113080, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000058354748
+      value: -0.00005835474
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18787,6 +18787,11 @@ PrefabInstance:
       objectReference: {fileID: 306508274}
     - target: {fileID: 4379998711672725168, guid: 99ee5130d6d5e434183337a8cc6aecc5,
         type: 3}
+      propertyPath: fileName
+      value: datos.json
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379998711672725168, guid: 99ee5130d6d5e434183337a8cc6aecc5,
+        type: 3}
       propertyPath: cajasBronce
       value: 
       objectReference: {fileID: 1200903507}
@@ -18854,6 +18859,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774807685403889096, guid: 99ee5130d6d5e434183337a8cc6aecc5,
+        type: 3}
+      propertyPath: fileName
+      value: datos.json
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
