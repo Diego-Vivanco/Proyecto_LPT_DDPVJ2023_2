@@ -71,7 +71,7 @@ public class LoadArms : MonoBehaviour
         armas[numero].SetActive(true);
         contadorArmas = contadorArmas + 1;
         Debug.Log("Numero de armas: " + contadorArmas);
-        datos.vidas = contadorArmas;
+        datos.numArmas = contadorArmas;
 
         sw = new StreamWriter(fileName, false);
         fileContent = JsonUtility.ToJson(datos); //Mandar un objeto cuya clase sea Serializable

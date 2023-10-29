@@ -51,7 +51,8 @@ public class GetItems : MonoBehaviour
             numeroOro++;
             Debug.Log("Número cajas de oro: " + numeroOro);
 
-            datos.numOro = numeroOro;
+            //datos.numOro = numeroOro;
+            datos.SetOro(numeroOro);
             sw = new StreamWriter(fileName, false);
             fileContent = JsonUtility.ToJson(datos); //Mandar un objeto cuya clase sea Serializable
             sw.Write(fileContent);
@@ -66,7 +67,8 @@ public class GetItems : MonoBehaviour
             numBronce++;
             Debug.Log("Número de cajas de bronce: " + numBronce);
 
-            datos.numPlata = numBronce;
+            //datos.numPlata = numBronce;
+            datos.SetPlata(numBronce);
             sw = new StreamWriter(fileName, false);
             fileContent = JsonUtility.ToJson(datos); //Mandar un objeto cuya clase sea Serializable
             sw.Write(fileContent);
