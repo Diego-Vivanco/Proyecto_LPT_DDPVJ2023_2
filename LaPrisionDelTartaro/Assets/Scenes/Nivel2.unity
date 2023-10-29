@@ -605,6 +605,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pandora_Box2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b7ea468a08b46ed4aa602bc3e858299b,
+        type: 3}
+      propertyPath: m_TagString
+      value: oro
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1047,6 +1052,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pandora_Box2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b7ea468a08b46ed4aa602bc3e858299b,
+        type: 3}
+      propertyPath: m_TagString
+      value: oro
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2542,6 +2552,89 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8422169710648127602, guid: ef6244331e5efbc45be88575793d2aee, type: 3}
+--- !u!1001 &835959320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2059708
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.06317635
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2252266
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -34.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49641818
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5035564
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.49641818
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5035564
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90.81799
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564905225728378462, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3472928320723588669, guid: 4d259ea71b7353b4387c964ea1e6e8c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Portal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d259ea71b7353b4387c964ea1e6e8c9, type: 3}
 --- !u!1 &864011695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,7 +3066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0014152245, y: 0.9749339, z: -0.006203808, w: -0.22240369}
+  m_LocalRotation: {x: -0.0014152238, y: 0.9749339, z: -0.006203808, w: -0.22240363}
   m_LocalPosition: {x: 12.23622, y: 2.67, z: -1.5493929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3172,52 +3265,52 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.12791234
+      value: -64.217
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.639
+      value: 7.355
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.61
+      value: -16.855
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.65464234
+      value: 0.69970876
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.6573471
+      value: -0.7052858
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.25829363
+      value: -0.07536545
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.26948592
+      value: -0.08543908
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90.933
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -67.55899
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 54.501
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: cd5da10065913a8499151babdaf4ceef,
         type: 3}
@@ -5216,6 +5309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pandora_Box2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b7ea468a08b46ed4aa602bc3e858299b,
+        type: 3}
+      propertyPath: m_TagString
+      value: bronce
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5392,6 +5490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pandora_Box2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b7ea468a08b46ed4aa602bc3e858299b,
+        type: 3}
+      propertyPath: m_TagString
+      value: bronce
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6242,6 +6345,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pandora_Box2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b7ea468a08b46ed4aa602bc3e858299b,
+        type: 3}
+      propertyPath: m_TagString
+      value: bronce
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6787,12 +6895,12 @@ PrefabInstance:
     - target: {fileID: 6959467110423113080, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.22240365
+      value: 0.22240362
       objectReference: {fileID: 0}
     - target: {fileID: 6959467110423113080, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0014152243
+      value: -0.001415224
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7145,6 +7253,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pandora_Box2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b7ea468a08b46ed4aa602bc3e858299b,
+        type: 3}
+      propertyPath: m_TagString
+      value: oro
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7342,12 +7455,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7dbea5a07868182459f7ab71bb740b6e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.131298
+      value: -21.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7dbea5a07868182459f7ab71bb740b6e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0182652
+      value: 2.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7dbea5a07868182459f7ab71bb740b6e,
         type: 3}
@@ -7398,6 +7511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box_Leo
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbea5a07868182459f7ab71bb740b6e,
+        type: 3}
+      propertyPath: m_TagString
+      value: oro
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7541,6 +7659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pandora_Box2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b7ea468a08b46ed4aa602bc3e858299b,
+        type: 3}
+      propertyPath: m_TagString
+      value: oro
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8443,6 +8566,7 @@ SceneRoots:
   - {fileID: 1292961021}
   - {fileID: 165859004}
   - {fileID: 1040566779}
+  - {fileID: 835959320}
   - {fileID: 1353366168}
   - {fileID: 1550548309}
   - {fileID: 1603963651}

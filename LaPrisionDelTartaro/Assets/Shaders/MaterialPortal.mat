@@ -50,7 +50,7 @@ Material:
     - _TwirlSpeed: 2.94
     - _TwirlStrenght: 5.35
     m_Colors:
-    - _PortalColor: {r: 0.05490196, g: 0.8156863, b: 0.9137255, a: 1}
+    - _PortalColor: {r: 0.49019608, g: 1, b: 0.054901958, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &5443288745247560769
 MonoBehaviour:
