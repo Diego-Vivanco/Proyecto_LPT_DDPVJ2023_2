@@ -28,7 +28,7 @@ public class HUD : MonoBehaviour
     void Start()
     {
         //ruta = Application.persistentDataPath + "/" + fileName;
-        if (File.Exists(Application.persistentDataPath + "/" + fileName))
+        if (File.Exists(/*(Application.persistentDataPath + "/" + */fileName))
         {
             Debug.Log("El archivo ya existe");
             sr = new StreamReader(/*Application.persistentDataPath + "/" +*/ fileName);
@@ -53,17 +53,23 @@ public class HUD : MonoBehaviour
 
         }
 
+        showHUD();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //GetNumArmas();
     }
 
+    public void showHUD()
+    {
+        GetNumArmas();
+    }
     public void GetNumArmas()
     {
-        armas.text = datos.numArmas.ToString();
+        armas.text = datos.GetNumArmas().ToString();
     }
 
     public void GetOro()

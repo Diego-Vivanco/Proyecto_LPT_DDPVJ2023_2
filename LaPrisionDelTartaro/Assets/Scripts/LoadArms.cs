@@ -13,9 +13,9 @@ public class LoadArms : MonoBehaviour
     private string fileContent;
     private Datos datos;
 
-    //public GameObject interfazHUD;
+    public GameObject interfazHUD;
 
-    //public TextMeshProUGUI armasRecolectadas;
+    public TextMeshProUGUI armasRecolectadas;
     //public TextMeshProUGUI cajasOro;
     //public TextMeshProUGUI cajasBronce;
 
@@ -78,7 +78,7 @@ public class LoadArms : MonoBehaviour
         sw.Write(fileContent);
         sw.Close();
 
-        //SetArmas(contadorArmas);
+        SetArmas(contadorArmas);
     }
 
     public void desactivaArmas()
@@ -88,9 +88,8 @@ public class LoadArms : MonoBehaviour
             armas[i].SetActive(false);
         }
     }
-
-    //public void SetArmas(int numeroArmas)
-    //{
-    //    armasRecolectadas.text = numeroArmas.ToString();
-    //}
+    public void SetArmas(int numeroArmas)
+    {
+        armasRecolectadas.text = numeroArmas.ToString();
+    }
 }
