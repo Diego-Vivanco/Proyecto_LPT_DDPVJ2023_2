@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class DeadController : MonoBehaviour
 {
@@ -10,8 +11,14 @@ public class DeadController : MonoBehaviour
     public Animator animator;
     public Quaternion angulo;
     public float grado;
+    public int vidaM = 100;
+    public bool atacar;
 
     public GameObject target;
+
+    public NavMeshAgent agente;
+    public float distancia_ataque;
+    public float radio_vision;
 
     // Start is called before the first frame update
     void Start()
@@ -59,14 +66,36 @@ public class DeadController : MonoBehaviour
         }
         else
         {
-            var lookPos = target.transform.position - transform.position;
-            lookPos.y = 0;
-            var rotation = Quaternion.LookRotation(lookPos);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
-            animator.SetBool("walk", false);
-            animator.SetBool("run", true);
-            transform.Translate(Vector3.forward * 2 * Time.deltaTime);
+            if(Vector3.Distance(transform.position, target.transform.position) > 1 && !atacar)
+            {
+                var lookPos = target.transform.position - transform.position;
+                lookPos.y = 0;
+                var rotation = Quaternion.LookRotation(lookPos);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
+                animator.SetBool("walk", false);
+                animator.SetBool("run", true);
+                transform.Translate(Vector3.forward * 2 * Time.deltaTime);
+                animator.SetBool("attack", false);
+            }
+            else
+            {
+                animator.SetBool("walk", false);
+                animator.SetBool("run", false);
+                animator.SetBool("attack", true);
+                //SoundSFxPegaso.InstanceSFxPegaso.golpeaPegaso();
+                SoundSFxMuerto.InstanceSFxMuerto.atacaMuerto();
+                atacar = true;
+            }
+
+
+
         }
 
+    }
+
+    public void Fin_anim()
+    {
+        animator.SetBool("attack", false);
+        atacar = false;
     }
 }
