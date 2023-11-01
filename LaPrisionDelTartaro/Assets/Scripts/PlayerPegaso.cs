@@ -5,6 +5,13 @@ using UnityEngine.UI;
 
 public class PlayerPegaso : MonoBehaviour
 {
+    // BARRA VIDA DISMINUYE CON ENEMIGO 
+
+    public LogicaBarraVida logicaBarraVida;
+    public float ataque = 2.0f;
+    
+    //-----------------------------------------
+
     public float velocidadMov = 5.0f;
     public float velocidadRot = 200.0f;
 
@@ -107,8 +114,16 @@ public class PlayerPegaso : MonoBehaviour
         }
 
 
+
     }
 
+    private void OnTriggerEnter(Collider coll)
+    {
+        if (coll.CompareTag("Enemigo"))
+        {
+            logicaBarraVida.vidaActual -= ataque;
+        }
+    }
     public void EstoyCayendo()
     {
         rb.AddForce(fuerzaExtra * Physics.gravity);

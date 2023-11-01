@@ -11,6 +11,7 @@ TagManager:
   - Portal
   - Arma3
   - vacio
+  - Enemigo
   layers:
   - Default
   - TransparentFX
