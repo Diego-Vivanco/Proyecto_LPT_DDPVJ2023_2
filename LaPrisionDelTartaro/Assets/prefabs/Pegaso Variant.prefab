@@ -458,10 +458,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7bf5414f17a5f54d8d0abdda3ec0a5a,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 706636078949885144}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7bf5414f17a5f54d8d0abdda3ec0a5a,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7563586857722137459}
   m_SourcePrefab: {fileID: 100100000, guid: f7bf5414f17a5f54d8d0abdda3ec0a5a, type: 3}
 --- !u!1 &5006357939991494404 stripped
@@ -559,8 +555,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interfazHUD: {fileID: 0}
   armasRecolectadas: {fileID: 0}
-  cajasOro: {fileID: 0}
-  cajasBronce: {fileID: 0}
   armas:
   - {fileID: 8807916194444400796}
   - {fileID: 1664666343182862307}
@@ -577,19 +571,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b3fbc82379aa743a425e8be827e2e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &706636078949885144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5006357939991494404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 548b4cb7fb5aabf47930d88f0e0bb1cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifes: 3
+  OroTexto: {fileID: 0}
+  BronceTexto: {fileID: 0}
+  numeroOro: 0
+  numBronce: 0
 --- !u!114 &7563586857722137459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,6 +589,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifes: 3
   cont: 0
+  barra: {fileID: 0}
+  lifesTexto: {fileID: 0}
+  personaje: {fileID: 0}
+  puntoInicial: {fileID: 0}
+  pausaCanvas: {fileID: 0}
 --- !u!4 &5634558014038369726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f7bf5414f17a5f54d8d0abdda3ec0a5a,
