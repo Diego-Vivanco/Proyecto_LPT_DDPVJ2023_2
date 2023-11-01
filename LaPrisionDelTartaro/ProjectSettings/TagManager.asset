@@ -12,6 +12,7 @@ TagManager:
   - Arma3
   - vacio
   - Enemigo
+  - PuntoInicial
   layers:
   - Default
   - TransparentFX

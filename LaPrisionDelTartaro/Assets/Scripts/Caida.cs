@@ -2,47 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class Caida : MonoBehaviour
 {
     public int lifes = 3;
     public int cont = 0;
+
+    public GameObject personaje;
+    public Transform puntoInicial;
+    public PauseMenu pausaCanvas;
+
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "vacio")
+        if (other.tag == "vacio")
         {
-            while (lifes > 0)
-            {
-                lifes -= 1;
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-            }
-
-            Debug.Log("PERDISTE JUEGO");
+            lifes -= 1;
+            MoverPuntoInicial();
+            checaVida();
 
         }
 
+    }
 
-        //if(other.tag == "vacio")
-        //{
-        //    cont +=1;
-        //    Debug.Log("Contador: "+ cont);
-        //    if(cont == 3)
-        //    {
-        //        Debug.Log("JUEGO PERDIDO");
-        //    }
-        //    else
-        //    {
-        //        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        //        lifes -= 1;
-        //        Debug.Log("lifes: " + lifes);
-        //    }
-        //    //Debug.Log("JUEGO PERDIDO");
-        //    //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        //    //lifes -= 1;
-        //}
+    public void checaVida()
+    {
+        if (lifes <= 0)
+        { 
+            pausaCanvas.HUD.SetActive(false);
+            pausaCanvas.GameOver.SetActive(true);
+           
+        }
+    }
 
+    public void MoverPuntoInicial()
+    {
+        personaje.transform.position = puntoInicial.position;
+    }
 
     }
-}
+
