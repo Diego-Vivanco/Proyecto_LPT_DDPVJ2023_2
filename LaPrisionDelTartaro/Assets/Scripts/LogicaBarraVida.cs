@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class LogicaBarraVida : MonoBehaviour
 {
-
+    public Caida caidaScript;
     public int vidaMax;
+    public int ataque = 1;
     public float vidaActual;
     public Image imagenBarraVida;
 
@@ -20,11 +21,23 @@ public class LogicaBarraVida : MonoBehaviour
     void Update()
     {
         RevisarVida();
+        caidaScript.checaVida();
 
-        if(vidaActual <= 0)
+    }
+
+    private void OnTriggerEnter(Collider coll)
+    {
+        if (coll.CompareTag("Enemigo"))
         {
-            gameObject.SetActive(false);
-            //PERDER VIDA O ALGUNA ACCIÓN
+            vidaActual -= ataque;
+
+            if(vidaActual <= 0)
+            {
+                caidaScript.lifes -= 1;
+                vidaActual = vidaMax;
+                caidaScript.MoverPuntoInicial();
+            }
+
         }
     }
     public void RevisarVida()

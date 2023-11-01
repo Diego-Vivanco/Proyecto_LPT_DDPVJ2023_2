@@ -73,6 +73,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7563586857722137459, guid: 99ee5130d6d5e434183337a8cc6aecc5,
+        type: 3}
+      propertyPath: personaje
+      value: 
+      objectReference: {fileID: 9012440152434545622}
     - target: {fileID: 8774807685403889096, guid: 99ee5130d6d5e434183337a8cc6aecc5,
         type: 3}
       propertyPath: fileName
@@ -87,6 +92,18 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5010948048494993500}
   m_SourcePrefab: {fileID: 100100000, guid: 99ee5130d6d5e434183337a8cc6aecc5, type: 3}
+--- !u!114 &5809631117466494881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7563586857722137459, guid: 99ee5130d6d5e434183337a8cc6aecc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 4064699410791148754}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012440152434545622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6ac84fec2cd864093b3d17abaedf44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9012440152434545622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5006357939991494404, guid: 99ee5130d6d5e434183337a8cc6aecc5,
@@ -105,6 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b61e9155aecb14381d3a4fd03ca102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  caidaScript: {fileID: 5809631117466494881}
   vidaMax: 30
+  ataque: 2
   vidaActual: 0
   imagenBarraVida: {fileID: 0}
