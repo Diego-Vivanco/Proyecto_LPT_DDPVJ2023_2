@@ -16,7 +16,7 @@ public class DeadController : MonoBehaviour
 
     public GameObject target;
 
-    public NavMeshAgent agente;
+    //public NavMeshAgent agente;
     public float distancia_ataque;
     public float radio_vision;
 
@@ -37,7 +37,7 @@ public class DeadController : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, target.transform.position) > radio_vision)
         {
-            agente.enabled = false;
+            //agente.enabled = false;
             animator.SetBool("walk", false);
             cronometro += 1 * Time.deltaTime;
             if (cronometro >= 4)
@@ -67,62 +67,63 @@ public class DeadController : MonoBehaviour
         }
         else
         {
-            var lookPos = target.transform.position - transform.position;
-            lookPos.y = 0;
-            var rotation = Quaternion.LookRotation(lookPos);
-            agente.enabled = true;
-            agente.SetDestination(target.transform.position);
-            if (Vector3.Distance(transform.position, target.transform.position) > 1 && !atacar)
-            {
-                animator.SetBool("walk", false);
-                animator.SetBool("run", true);
-            }
-            else
-            {
-                if (!atacar)
-                {
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 1);
-                    animator.SetBool("walk", false);
-                    animator.SetBool("run", false);
-                }
-
-            }
-
-
-
-            //if(Vector3.Distance(transform.position, target.transform.position) > 1 && !atacar)
+            //var lookPos = target.transform.position - transform.position;
+            //lookPos.y = 0;
+            //var rotation = Quaternion.LookRotation(lookPos);
+            //agente.enabled = true;
+            //agente.SetDestination(target.transform.position);
+            //if (Vector3.Distance(transform.position, target.transform.position) > 1 && !atacar)
             //{
-            //    var lookPos = target.transform.position - transform.position;
-            //    lookPos.y = 0;
-            //    var rotation = Quaternion.LookRotation(lookPos);
-            //    transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
             //    animator.SetBool("walk", false);
             //    animator.SetBool("run", true);
-            //    transform.Translate(Vector3.forward * 2 * Time.deltaTime);
-            //    animator.SetBool("attack", false);
             //}
             //else
             //{
-            //    animator.SetBool("walk", false);
-            //    animator.SetBool("run", false);
-            //    animator.SetBool("attack", true);
-            //    SoundSFxMuerto.InstanceSFxMuerto.atacaMuerto();
-            //    atacar = true;
+            //    if (!atacar)
+            //    {
+            //        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 1);
+            //        animator.SetBool("walk", false);
+            //        animator.SetBool("run", false);
+            //    }
+
             //}
+
+
+
+            if (Vector3.Distance(transform.position, target.transform.position) > 1 && !atacar)
+            {
+                var lookPos = target.transform.position - transform.position;
+                lookPos.y = 0;
+                var rotation = Quaternion.LookRotation(lookPos);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
+                animator.SetBool("walk", false);
+                animator.SetBool("run", true);
+                transform.Translate(Vector3.forward * 2 * Time.deltaTime);
+                animator.SetBool("attack", false);
+            }
+            else
+            {
+                animator.SetBool("walk", false);
+                animator.SetBool("run", false);
+                animator.SetBool("attack", true);
+                SoundSFxMuerto.InstanceSFxMuerto.atacaMuerto();
+                atacar = true;
+            }
         }
 
-        if(atacar)
-        {
-            agente.enabled = false;
-        }
+        //if(atacar)
+        //{
+        //    agente.enabled = false;
+        //}
     }
 
     public void Fin_anim()
     {
-        if(Vector3.Distance(transform.position, target.transform.position) > distancia_ataque + 0.2f)
-        {
-            animator.SetBool("attack", false);
-        }
+        //if(Vector3.Distance(transform.position, target.transform.position) > distancia_ataque + 0.2f)
+        //{
+        //    animator.SetBool("attack", false);
+        //}
+        animator.SetBool("attack", false);
         atacar = false;
     }
 }

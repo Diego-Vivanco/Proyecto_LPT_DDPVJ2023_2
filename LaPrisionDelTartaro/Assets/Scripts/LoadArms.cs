@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LoadArms : MonoBehaviour
 {
@@ -29,6 +30,22 @@ public class LoadArms : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Q))
         {
             desactivaArmas();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Portal" && contadorArmas == 3)
+        {
+            SceneManager.LoadScene(2);
+        }
+        if (other.tag == "Portal" && contadorArmas == 6)
+        {
+            SceneManager.LoadScene(3);
+        }
+        if (other.tag == "Portal" && contadorArmas == 9)
+        {
+            SceneManager.LoadScene(4);
         }
     }
 

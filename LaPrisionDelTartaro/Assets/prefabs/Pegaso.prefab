@@ -83,7 +83,8 @@ PrefabInstance:
       propertyPath: fileName
       value: datos.json
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 706636078949885144, guid: 99ee5130d6d5e434183337a8cc6aecc5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
