@@ -13,6 +13,7 @@ TagManager:
   - vacio
   - Enemigo
   - PuntoInicial
+  - muerto
   layers:
   - Default
   - TransparentFX
