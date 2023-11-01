@@ -9,6 +9,7 @@ public class Caida : MonoBehaviour
 {
     public int lifes = 3;
     public int cont = 0;
+    public LogicaBarraVida barra;
 
     public TMP_Text lifesTexto;
 
@@ -31,6 +32,8 @@ public class Caida : MonoBehaviour
 
             lifes -= 1;
             MoverPuntoInicial();
+            barra.vidaActual = barra.vidaMax;
+
             checaVida();
 
         }
