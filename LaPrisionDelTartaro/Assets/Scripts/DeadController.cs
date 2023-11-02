@@ -15,6 +15,7 @@ public class DeadController : MonoBehaviour
     public bool atacar;
 
     public GameObject target;
+    private int contGolpes;
 
     //public NavMeshAgent agente;
     public float distancia_ataque;
@@ -35,7 +36,7 @@ public class DeadController : MonoBehaviour
 
     public void Comportamiento()
     {
-        if (Vector3.Distance(transform.position, target.transform.position) > 5)
+        if (Vector3.Distance(transform.position, target.transform.position) > 20)
         {
             //agente.enabled = false;
             animator.SetBool("walk", false);
@@ -125,5 +126,19 @@ public class DeadController : MonoBehaviour
         //}
         animator.SetBool("attack", false);
         atacar = false;
+    }
+
+
+
+    private void OnTriggerEnter(Collider coll)
+    {
+        if(coll.CompareTag("ataque") || coll.CompareTag("patada"))
+        {
+            contGolpes++;
+            if(contGolpes > 5)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

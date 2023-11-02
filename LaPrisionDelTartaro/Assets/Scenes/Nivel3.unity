@@ -4473,6 +4473,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nunchakus
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd5da10065913a8499151babdaf4ceef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7042,6 +7047,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e0d8b861a20f0845851679e6f2febd2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb5a64fac4ba7794d92f012260882924, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e0d8b861a20f0845851679e6f2febd2,
         type: 3}
       propertyPath: m_Name
@@ -7387,6 +7397,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tonfa
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b96d4c96f1e85474fa9ac40c543ef5c1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
