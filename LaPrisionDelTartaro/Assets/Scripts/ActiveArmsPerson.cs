@@ -22,7 +22,7 @@ public class ActiveArmsPerson : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Pegaso")
+        if (other.CompareTag("Pegaso"))
         {
             //contadorArmas = contadorArmas + 1;
             tomarArma.activaArmas(numArma);
