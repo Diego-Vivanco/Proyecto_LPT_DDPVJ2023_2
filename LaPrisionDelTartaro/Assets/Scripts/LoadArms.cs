@@ -47,6 +47,12 @@ public class LoadArms : MonoBehaviour
         {
             SceneManager.LoadScene(4);
         }
+        if (other.tag == "armadura" && contadorArmas == 3)
+        {
+            //SceneManager.LoadScene(4);
+            Debug.Log("GANASTE EL JEUGO");
+        }
+
     }
 
     public void activaArmas(int numero)

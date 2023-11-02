@@ -15,6 +15,7 @@ TagManager:
   - PuntoInicial
   - muerto
   - Portal2
+  - armadura
   layers:
   - Default
   - TransparentFX
