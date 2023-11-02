@@ -35,7 +35,7 @@ public class DeadController : MonoBehaviour
 
     public void Comportamiento()
     {
-        if (Vector3.Distance(transform.position, target.transform.position) > radio_vision)
+        if (Vector3.Distance(transform.position, target.transform.position) > 5)
         {
             //agente.enabled = false;
             animator.SetBool("walk", false);
