@@ -39,11 +39,11 @@ public class LoadArms : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
-        if (other.tag == "Portal" && contadorArmas == 6)
+        if (other.tag == "Portal2" && contadorArmas == 3)
         {
             SceneManager.LoadScene(3);
         }
-        if (other.tag == "Portal" && contadorArmas == 9)
+        if (other.tag == "Portal3" && contadorArmas == 3)
         {
             SceneManager.LoadScene(4);
         }
