@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class LoadArms : MonoBehaviour
 {
 
@@ -50,6 +51,7 @@ public class LoadArms : MonoBehaviour
         if (other.tag == "armadura" && contadorArmas == 3)
         {
             //SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
             Debug.Log("GANASTE EL JEUGO");
         }
 

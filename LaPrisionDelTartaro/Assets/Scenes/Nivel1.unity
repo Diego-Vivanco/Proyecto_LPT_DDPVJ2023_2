@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13040084, g: 0.09601555, b: 0.06181498, a: 1}
+  m_IndirectSpecularColor: {r: 0.1304008, g: 0.09601554, b: 0.06181498, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7289,6 +7289,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b61e9155aecb14381d3a4fd03ca102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1150702424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 730985303979544952, guid: 51e7cac48edf4b2429e980e68f60a438,
+    type: 3}
+  m_PrefabInstance: {fileID: 7502577807108322246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1150702426
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150702424}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.11
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1191476411 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3220236845417854630, guid: 7c4ed1483e6c24d48b33ee553ac2e57a,
@@ -7800,6 +7829,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429000751}
   m_CullTransparentMesh: 1
+--- !u!1 &1442200309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6597349561534098567, guid: 51e7cac48edf4b2429e980e68f60a438,
+    type: 3}
+  m_PrefabInstance: {fileID: 7502577807108322246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1442200311
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442200309}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Height: 1.22
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.34, z: 0}
 --- !u!1001 &1455881916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14189,12 +14247,12 @@ PrefabInstance:
     - target: {fileID: 3720686808212721772, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.00071652624
+      value: 0.00071652734
       objectReference: {fileID: 0}
     - target: {fileID: 3720686808212721772, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0000037184216
+      value: 0.0000037184268
       objectReference: {fileID: 0}
     - target: {fileID: 3720686808212721772, guid: e06f0a6d0a8c8924b98875a4512c43ae,
         type: 3}
@@ -14809,6 +14867,11 @@ PrefabInstance:
       propertyPath: armasRecolectadas
       value: 
       objectReference: {fileID: 1216933831}
+    - target: {fileID: 730985303979544952, guid: 51e7cac48edf4b2429e980e68f60a438,
+        type: 3}
+      propertyPath: m_TagString
+      value: ataque
+      objectReference: {fileID: 0}
     - target: {fileID: 4732957260180873498, guid: 51e7cac48edf4b2429e980e68f60a438,
         type: 3}
       propertyPath: OroTexto
@@ -14849,6 +14912,11 @@ PrefabInstance:
       propertyPath: puntoInicial
       value: 
       objectReference: {fileID: 756531045}
+    - target: {fileID: 6597349561534098567, guid: 51e7cac48edf4b2429e980e68f60a438,
+        type: 3}
+      propertyPath: m_TagString
+      value: patada
+      objectReference: {fileID: 0}
     - target: {fileID: 8527933393569335660, guid: 51e7cac48edf4b2429e980e68f60a438,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14907,7 +14975,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6597349561534098567, guid: 51e7cac48edf4b2429e980e68f60a438,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1442200311}
+    - targetCorrespondingSourceObject: {fileID: 730985303979544952, guid: 51e7cac48edf4b2429e980e68f60a438,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1150702426}
   m_SourcePrefab: {fileID: 100100000, guid: 51e7cac48edf4b2429e980e68f60a438, type: 3}
 --- !u!1001 &7663198227727146994
 PrefabInstance:

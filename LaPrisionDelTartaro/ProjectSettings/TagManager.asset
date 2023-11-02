@@ -16,6 +16,8 @@ TagManager:
   - muerto
   - Portal2
   - armadura
+  - ataque
+  - patada
   layers:
   - Default
   - TransparentFX
